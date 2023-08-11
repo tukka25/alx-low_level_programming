@@ -9,14 +9,12 @@
 int main(void)
 {
 	int	i;
-	char *str;
 
-	i = 0;
-	str = "0123456789";
-	while (str[i])
+	i = '0';
+	while (i != ':')
 	{
-		putchar(str[i]);
-		if (str[i] != '9')
+		putchar(i);
+		if (i != '9')
 		{
 			putchar(',');
 			putchar(' ');
