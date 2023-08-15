@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  _abs - calculate the absolute value
+ *  abs - calculate the absolute value
  *	@n: int
  *	Return: return the absolute value
  */
