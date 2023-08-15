@@ -11,7 +11,14 @@ void print_alphabet_x10(void)
 
 	while (i < 10)
 	{
-		print_alphabet();
+		int		j = 97;
+
+		while (j < 123)
+		{
+			_putchar(j);
+			j++;
+		}
+		_putchar('\n');
 		i++;
 	}
 }
@@ -21,3 +28,9 @@ void print_alphabet_x10(void)
  *
  *  Return: Always 0 (Success)
  */
+
+int main(void)
+{
+	print_alphabet_x10();
+	return (0);
+}
