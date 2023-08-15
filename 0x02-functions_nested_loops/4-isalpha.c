@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *  _islower - check if its lowercase
+ *  _isalpha - check if its alphabet
  *	@c: char
- *	Return: retuen 1 if its lowercase else 0
+ *	Return: retuen 1 if its alphabet else 0
  */
 
 int	_isalpha(int c)
