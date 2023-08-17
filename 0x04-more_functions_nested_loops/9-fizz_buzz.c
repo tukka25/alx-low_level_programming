@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * main - fizzbuzz
@@ -30,4 +29,5 @@ int main(void)
 			printf(" ");
 		i++;
 	}
+	printf("\n");
 }
