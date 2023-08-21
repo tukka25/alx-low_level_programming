@@ -14,7 +14,9 @@ void print_rev(char *s)
 
 	if (!s)
 		return;
-	i = _strlen(s) - 1;
+	while (s[i])
+		i++;
+	i -= 1;
 	while (i >= 0)
 		_putchar(s[i--]);
 	_putchar('\n');
