@@ -26,6 +26,10 @@ int _atoi(char *s)
 	while (s[i] >= '0' && s[i] <= '9' && s[i])
 	{
 		result = result * 10 + s[i] - '0';
+		if (result == 214748364 && s[i + 1] && sign == 1)
+			return ((214748364 * 10 + (s[i + 1] - 48)));
+		if (result == 214748364 && s[i + 1] == '8' && sign == -1)
+			return (((-214748364 * 10) - (s[i + 1] - 48)));
 		i++;
 	}
 	return (result * sign);
