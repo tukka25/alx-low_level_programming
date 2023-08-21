@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  print_array - copies from src to dst
+ *  _strcpy - copies from src to dst
  *
  * @dest: a char * to copy to
  * @src: a char * to copy from
