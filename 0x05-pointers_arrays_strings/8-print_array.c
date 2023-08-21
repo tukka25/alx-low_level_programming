@@ -16,9 +16,9 @@ void print_array(int *a, int n)
 	while (a[i] != 0 && i < n)
 	{
 		if (i == n - 1 && a[i])
-			printf("%c", (a[i] + 48));
+			printf("%d", (a[i]));
 		else
-			printf("%c, ", (a[i] + 48));
+			printf("%d, ", (a[i]));
 		i++;
 	}
 	printf("\n");
