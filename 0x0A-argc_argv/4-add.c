@@ -17,7 +17,7 @@ int main(int ac, char **av)
 	if (ac < 2)
 	{
 		printf("0\n");
-		return (1);
+		return (0);
 	}
 	while (av[i])
 	{
