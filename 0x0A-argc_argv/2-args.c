@@ -8,11 +8,10 @@
 
 int main(int ac, char **av)
 {
-	int i = 0;
+	int i;
 
-	while (av[i])
-	{
+	for (i = 0; i < ac; i++)
 		printf("%s\n", av[i]);
-		i++;
-	}
+
+	return (0);
 }
