@@ -1,5 +1,8 @@
 {
     "editor.stickyTabStops": true,
     "editor.tabSize": 4,
-    "editor.insertSpaces": false
+    "editor.insertSpaces": false,
+    "files.associations": {
+        "stdio.h": "c"
+    }
 }
