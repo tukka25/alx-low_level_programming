@@ -16,4 +16,5 @@ int main(int ac, char **av)
 		return (1);
 	}
 	printf("%d\n", atoi(av[1]) * atoi(av[2]));
+	return (0);
 }
