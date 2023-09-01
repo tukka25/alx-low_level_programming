@@ -1,21 +1,18 @@
-#include "main.h"
+#include <stdio.h>
 /**
- *	main -Entry point
+ *	main - prints all arguments it receives.
  *	@ac:number of args
  *	@av:args vector
  *	Return: Always 0 (Success)
  */
 
-int main(int ac, char *av[])
+int main(int ac, char **av)
 {
 	int i = 0;
 
-	if (ac >= 1)
+	while (av[i])
 	{
-		while (av[i])
-		{
-			printf("%s\n", av[i]);
-			i++;
-		}
+		printf("%s\n", av[i]);
+		i++;
 	}
 }
