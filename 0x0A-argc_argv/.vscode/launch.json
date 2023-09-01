@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/atukka/Desktop/alx/alx-low_level_programming/0x0A-argc_argv",
+      "program": "/Users/atukka/Desktop/alx/alx-low_level_programming/0x0A-argc_argv/build/Debug/outDebug"
+    }
+  ]
+}
