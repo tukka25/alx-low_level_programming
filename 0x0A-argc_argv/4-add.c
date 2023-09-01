@@ -14,9 +14,9 @@ int main(int ac, char **av)
 	int	i = 1;
 	int	j = 0;
 
-	if (ac == 1)
+	if (ac < 2)
 	{
-		write(1, "Error\n", 6);
+		printf("0\n");
 		return (1);
 	}
 	while (av[i])
