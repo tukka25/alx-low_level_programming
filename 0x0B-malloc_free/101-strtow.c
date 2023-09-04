@@ -36,7 +36,7 @@ char **strtow(char *str)
 	int	len1 = 0;
 	char	**s = NULL;
 
-	if (!str || !*str || (*str == ' ' && !str[1]))
+	if (!str || !*str)
 		return (NULL);
 	len1 = len(str);
 	s = malloc((len1 + 1) * sizeof(char *));
@@ -66,6 +66,8 @@ char **strtow(char *str)
 		s[i][j] = '\0';
 		i++;
 	}
+	if (i == 0 && !*s)
+		return (free(s[i]), free(s), NULL);
 	s[i] = NULL;
 	return (s);
 }
