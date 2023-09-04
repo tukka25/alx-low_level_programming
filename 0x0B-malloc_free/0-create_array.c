@@ -1,17 +1,15 @@
 #include "main.h"
 
 /**
- *   create_array- creates an array
- *
- * @size: a int
- * @c: a char
- *
- * Return: char *
+ *	create_array- creates an array
+ *	@size: a unsignedcint
+ *	@c: a char
+ *	Return: char *
  */
 
 char *create_array(unsigned int size, char c)
 {
-	int i = 0;
+	unsigned int i = 0;
 	char *str = NULL;
 
 	if (size < 0)
@@ -19,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	str = malloc(size + 1);
 	if (!str)
 		return (NULL);
-	while (i < (int)size)
+	while (i < size)
 	{
 		str[i] = c;
 		i++;
