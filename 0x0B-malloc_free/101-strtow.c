@@ -47,17 +47,15 @@ char **strtow(char *str)
 		j = 0;
 		while (str && *str == ' ')
 			str++;
+		if (!*str)
+			break;
 		if (*str == ' ')
 			str++;
 		while (str[j] && str[j] != ' ')
 			j++;
 		s[i] = malloc(j + 1);
 		if (!s[i])
-		{
-			free(s[i]);
-			free(s);
-			return (NULL);
-		}
+			return (free(s[i]), free(s), NULL);
 		j = 0;
 		while (*str && *str != ' ')
 		{
